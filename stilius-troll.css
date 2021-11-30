@@ -1,0 +1,541 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+    overflow-x: hidden;
+}
+h1{
+  font-size:  22pt;
+}
+header{
+  margin: 0px;
+}
+header video{
+  display: none;
+}
+header img{
+    width: 200px;
+    display:block;
+    float: left;
+    padding: 15px;
+}
+.menu-bigger{
+  display: none;
+}
+.header ul{
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+.header li a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #363836;
+    border-bottom: #7d807d 1px solid ;
+}
+.header li a:hover{
+    background-color: #363836;
+    color: white;
+}
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.header .menu-icon{
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+.header .menu-icon .navicon{
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.header .menu-icon .navicon:before{
+  top: 5px;
+}
+.header .menu-icon .navicon:after{
+  top: -5px;
+}
+.header .menu-btn{
+    display: none;
+}
+.header .menu-btn{
+    display: none;
+}
+.header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+} 
+.header .menu-btn:checked ~ .menu-icon .navicon{
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:before{
+    transform: rotate(-45deg);
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:after{
+    transform: rotate(45deg);
+} 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after{
+    top: 0;
+}
+.apyranke{
+    background-image: url("troll-header.png");
+    background-position: center center;
+    width: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.apyranke h1{
+  color: white;
+  padding-top: 30px;
+}
+main section h1{
+    padding: 25px;
+    font-weight: 500;
+    font-family:  'Lora', serif;
+    text-align: left;
+}
+.winter h1{
+  text-align: center;
+  margin: 0;
+}
+.winter p{
+  padding: 0px 15px 15px 15px;
+  text-align: justify;
+  margin: 0;
+}
+.winter1 img{
+  display: none;
+}
+.winter img{
+  width: 100%;
+  height: auto;
+}
+.button-winter{
+  width: 150px;
+  background-color: rgb(58, 63, 60);
+  color: white;
+  padding: 12px 15px;
+  border: transparent;
+  position: relative;
+  margin: 15px;
+  border-radius: 5px;
+  float: right;
+}
+.button-winter:hover{
+  background-color: #ffffff;
+  color: rgb(32, 34, 33);
+  border: 1px solid rgb(58, 63, 60);
+  border-radius: 5px;
+  padding: 9px 15px;
+  float: right;
+  margin: 15px;
+}
+.top-beads h1{
+    margin:0;
+    text-align: center;
+}
+.kolekcionieres p{
+padding: 0px 15px 15px 15px;
+text-align: justify;
+margin: 0;
+margin-bottom: 10px;
+}
+.kolekcionieres img{
+  display: none;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides img{
+width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 10px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.history h1{
+  margin:0;
+  text-align: center;
+}
+.history-p{
+  margin: 0;
+  padding: 0px 15px 20px 15px;
+  text-align: justify;
+}
+.history-img{
+  background-image: url("troll-family.jpg");
+  background-position: center center;
+  width: auto;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.naujienlaiskis h1{
+  margin:0;
+  text-align: center;
+}
+.vyriska-apyranke{
+  display: none;
+}
+.google-maps{
+  width: 100%;
+  height: 400px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.formos{
+  margin: 15px;
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  background-color: rgb(58, 63, 60);
+  color: white;
+  padding: 8px 35px;
+  border: transparent;
+  float: right;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: #ffffff;
+  color: rgb(32, 34, 33);
+  border: 1px solid rgb(58, 63, 60);
+  border-radius: 5px;
+  padding: 8px 35px;
+  float: right;
+  margin: 15px;
+}
+.submit-mygtukas{
+  width: auto;
+  height: 60px;
+}
+.zemelapis{
+  margin:0;
+  text-align: center;
+}
+.kontaktai p{
+  padding: 3px 15px;
+  margin: 0;
+}
+footer{
+  background-color: rgb(58, 63, 60);
+  width: auto;
+  height: 150px;
+}
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.social-icons div:hover{
+  transform: translateY(-5px);
+}
+footer div img{
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+.ul-footer{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(58, 63, 60);
+  text-align:center;
+}
+.social-icons div img{
+  margin: 5px;
+}
+.ul-footer li{
+  display: inline-block;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 8pt;
+}
+.ul-footer li a{
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  body{
+    width: 80%;
+    margin: 0px 10% 0px 10%; 
+  }
+.header .menu{
+  display: none;
+}
+.header .menu-bigger{
+  display: block;
+}
+.header .menu-bigger ul{
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+.header .menu-bigger li a{
+  display: block;
+  padding: 20px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.header .menu-bigger li a:hover{
+  background-color: #363836;
+  color: white;
+}
+.apyranke{
+  display: none;
+}
+header video{
+  display: inline-block;
+}
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+header img{
+display: inline;
+margin:0;
+padding: 15px;
+}
+header ul{
+margin: 0;
+}
+.header li {
+float: right;
+}
+.header li a {
+padding: 20px 30px;
+border-bottom: none;
+}
+.header .menu {
+clear: none;
+float: right;
+max-height: none;
+}
+.header .menu-icon {
+display: none;
+}
+.winter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.winter1{
+  flex: 1;
+  order:2;
+  padding: 0 30px;
+}
+.winter2{
+  flex: 1;
+  order: 1;
+  position: relative;
+  margin: auto;
+}
+.winter h1{
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin: 0;
+  text-align: center;
+}
+.winter p{
+  margin: 0;
+  padding: 5px 15px;
+  text-align: justify;
+}
+.winter img{
+border-radius: 5px;
+height: auto;
+}
+.button-winter{
+background-color: rgb(58, 63, 60);
+color: white;
+padding: 5px 15px;
+border: transparent;
+float: right;
+margin: 15px;
+border-radius: 5px;
+}
+.button-winter:hover{
+  background-color: #ffffff;
+  color: rgb(32, 34, 33);
+  border: 1px solid rgb(58, 63, 60);
+  border-radius: 5px;
+  padding: 5px 15px;
+  float: right;
+  margin: 15px;
+}
+.top-beads{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.slideshow-container{
+  flex: 1;
+  order:2;
+}
+.slideshow-container div img{
+  border-radius: 5px;
+}
+.kolekcionieres{
+  flex: 1;
+  order:1;
+  padding: 0 30px;
+}
+.kolekcionieres p{
+    margin: 0;
+    padding: 5px 15px;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+.history-p{
+  padding: 0px 0px 20px 0px;
+}
+.kontaktai p{
+  display: none;
+}
+.pre-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.naujienlaiskis{
+  flex: 1;
+  order: 2;
+}
+.kontaktai{
+  flex: 1;
+  order: 1;
+}
+.map-responsive{
+  overflow: hidden;
+  padding-bottom: 70%;
+  position: relative;
+  height:0;
+}
+.map-responsive iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+}
+@media only screen and (min-width: 1281px) {
+.winter1 img{
+  display: block;
+}
+.kolekcionieres img{
+  display: block;
+}
+.vyriska-apyranke{
+  display: inline-block;
+}
+.header .menu-bigger li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+}
+.history-img{
+  min-height: 768px;
+}
+}
